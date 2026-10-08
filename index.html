@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Tailwind CSS — 30+ Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#f59e0b',
+                        dark: '#1f2937',
+                        light: '#f9fafb',
+                    },
+                    fontFamily: {
+                        nunito: ['Nunito', 'sans-serif'],
+                        fredoka: ['Fredoka', 'sans-serif'],
+                    },
+                    spacing: {
+                        '9/16': '56.25%',
+                    },
+                    maxWidth: {
+                        '8xl': '88rem',
+                    },
+                    zIndex: {
+                        '100': '100',
+                    }
+                }
+           
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-dark text-gray-100 font-nunito min-h-screen flex flex-col">
+
+    <header class="bg-dark shadow-lg border-b border-gray-700 py-4 px-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold font-fredoka text-white">Tailwind CSS Showcase</h1>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Docs</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-accent px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">API</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-8">
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-white mb-2">Demonstração de Classes Tailwind CSS</h2>
+            <p class="text-lg text-gray-300">Este projeto utiliza mais de 30 classes diferentes do Tailwind CSS.</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-800 rounded-xl shadow-md p-6 border border-gray-700 transform hover:scale-105 transition-transform duration-200">
+                <div class="flex items-center justify-center w-12 h-12 bg-primary bg-opacity-10 rounded-lg mb-4">
+                    <span class="text-2xl">🎨</span>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Design System</h3>
+                <p class="text-gray-400 text-sm">Cores, tipografia e espaçamentos consistentes.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl shadow-md p-6 border border-gray-700 transform hover:scale-105 transition-transform duration-200">
+                <div class="flex items-center justify-center w-12 h-12 bg-secondary bg-opacity-10 rounded-lg mb-4">
+                    <span class="text-2xl">📱</span>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Responsivo</h3>
+                <p class="text-gray-400 text-sm">Layouts que se adaptam a qualquer tamanho de tela.</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl shadow-md p-6 border border-gray-700 transform hover:scale-105 transition-transform duration-200">
+                <div class="flex items-center justify-center w-12 h-12 bg-accent bg-opacity-10 rounded-lg mb-4">
+                    <span class="text-2xl">⚡</span>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Performance</h3>
+                <p class="text-gray-400 text-sm">Utility-first para CSS otimizado e sem bloat.</p>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 rounded-xl shadow-md p-6 mb-8 border border-gray-700">
+            <h3 class="text-xl font-semibold text-white mb-4">Classes Utilizadas</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">bg-gray-900</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">bg-gradient-to-br</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">from-gray-900</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">to-dark</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-gray-100</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-gray-300</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-gray-400</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-gray-500</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-2xl</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-3xl</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">font-bold</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">font-nunito</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">font-fredoka</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">flex</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">flex-col</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">flex-grow</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">justify-center</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">justify-between</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">items-center</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">items-start</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">grid</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">grid-cols-1</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">md:grid-cols-3</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">gap-6</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">max-w-4xl</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">min-h-screen</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">space-x-4</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">border</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">border-gray-700</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">border-t</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">rounded-xl</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">rounded-lg</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">rounded-full</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">shadow-md</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">shadow-lg</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">hover:scale-105</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">transition-colors</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">duration-200</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">transform</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">hover:bg-primary</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">py-4</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">px-6</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">mb-8</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">mb-4</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">flex-grow</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">py-8</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">mx-auto</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">w-12</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">h-12</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">bg-opacity-10</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-sm</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-xl</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-white</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">text-dark</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">bg-primary</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">bg-secondary</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">bg-accent</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">sm:grid-cols-3</span>
+                <span class="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-md">sm:grid</span>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold text-white mb-4">Grid Responsivo</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-primary text-white p-4 rounded-lg text-center">
+                    <span class="block text-2xl font-bold">1</span>
+                    <span class="text-sm">Coluna</span>
+                </div>
+                <div class="bg-secondary text-white p-4 rounded-lg text-center transform rotate-3">
+                    <span class="block text-2xl font-bold">2</span>
+                    <span class="text-sm">Coluna</span>
+                </div>
+                <div class="bg-accent text-dark p-4 rounded-lg text-center">
+                    <span class="block text-2xl font-bold">3</span>
+                    <span class="text-sm">Coluna</span>
+                </div>
+                <div class="bg-gray-700 text-white p-4 rounded-lg text-center">
+                    <span class="block text-2xl font-bold">4</span>
+                    <span class="text-sm">Coluna</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark border-t border-gray-700 text-center py-4 mt-8">
+            <p class="text-sm text-gray-500">Projeto desenvolvido para a Atividade 02 da Aula 07 — Frameworks CSS (Tailwind).</p>
+        </footer>
+    </main>
+
+    <button class="fixed bottom-6 right-6 bg-primary hover:bg-primary-hover text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-110 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+        Voltar ao topo
+    </button>
+
+</body>
+</html>
